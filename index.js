@@ -67,7 +67,7 @@ class Book {
     this.index = index;
   }
 
-  removeBook() {
+  removeBook = () => {
     this.index = bookIndex;
     books.splice(this.index, 1);
     localStorage.setItem('books', JSON.stringify(books));
@@ -75,7 +75,7 @@ class Book {
     createBooksList(books);
   }
 
-  addBook() {
+  addBook = () => {
     if (books.length) {
       bookIndex = (books.length - 1);
     }
